@@ -17,6 +17,16 @@ commands:
             aws s3 rm s3://udapeople-<<parameters.workflow-id>> --recursive
             aws cloudformation delete-stack --stack-name udapeople-frontend-<<parameters.workflow-id>>
 
+  install_awscli:
+    description: Install AWS CLI
+    steps:
+      - run:
+          name: Install AWS CLI
+          command: |
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscli.zip"
+            unzip awscli.zip
+            sudo ./aws/install
+
   # revert-migrations:
   #   description: Revert the last migration if successfully run in the current workflow.
   #   parameters:
