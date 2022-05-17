@@ -10,3 +10,6 @@
 
 4. Evidence of healthy back-end application
     ec2-3-80-128-118.compute-1.amazonaws.com:3030/api/status
+
+5. Evidence of Prometheus Server
+    http://ec2-52-90-105-119.compute-1.amazonaws.com:9090/
