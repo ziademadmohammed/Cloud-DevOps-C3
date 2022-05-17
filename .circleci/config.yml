@@ -193,20 +193,20 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run:
-        name: Install dependencies
-        command: |
-          sudo apt update
-          sudo apt install tar gzip unzip
-          sudo apt install ansible
-          # install aws
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
       - add_ssh_keys:
           fingerprints: ["1f:6c:28:1c:b8:ec:76:2a:64:f0:57:84:a7:29:73:67"]
       - attach_workspace:
           at: ~/
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt update
+            sudo apt install tar gzip unzip
+            sudo apt install ansible
+            # install aws
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            unzip awscliv2.zip
+            sudo ./aws/install
       - run:
           name: Configure Server
           command: |
