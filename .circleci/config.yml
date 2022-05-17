@@ -212,7 +212,7 @@ jobs:
           command: |
             cd .circleci/ansible
             cat inventory.txt
-            ansible-playbook -i inventory.txt configure-server.yml
+            ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i inventory.txt configure-server.yml
       - destroy-environment:
           # on failure
           workflow-id: ${CIRCLE_WORKFLOW_ID:0:7}
