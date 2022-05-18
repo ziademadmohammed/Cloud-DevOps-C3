@@ -3,13 +3,13 @@
 
 
 2. Public URL for your S3 Bucket (aka, your green candidate front-end) [URL02]
-	http://udapeople-b907f8b.s3-website-us-east-1.amazonaws.com/
+	http://udapeople-b13b2c1.s3-website-us-east-1.amazonaws.com
 
 3. Evidence of deployed and functioning front-end application in CloudFront
     http://d2sbig48me72q4.cloudfront.net/
 
 4. Evidence of healthy back-end application
-    http://ec2-107-21-187-243.compute-1.amazonaws.com:3030/api/status
+    http://ec2-54-234-116-227.compute-1.amazonaws.com:3030/api/status
 
 5. Evidence of Prometheus Server
     http://ec2-18-206-120-228.compute-1.amazonaws.com:9090/
