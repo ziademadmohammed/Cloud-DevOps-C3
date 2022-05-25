@@ -10,3 +10,6 @@
 
 4. Evidence of healthy back-end application
     http://ec2-35-172-222-83.compute-1.amazonaws.com:3030/api/status
+
+5. promethius
+    http://ec2-18-205-246-143.compute-1.amazonaws.com:9090/targets
